@@ -1,0 +1,54 @@
+@import "../global";
+
+.review__container {
+    width: 100%;
+    padding: 5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 2rem;
+    background: $Primary3;
+
+    .title {
+        @include title()
+    }
+
+    .review__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5rem;
+        gap: 2rem;
+
+        .review__item {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 1rem;
+            flex-direction: column;
+            padding: 3rem 2rem ;
+            background: #fff;
+            border-radius: 1rem;
+
+            .review__profile {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                div h3 {
+                    font-size: 1.5rem;
+                }
+                div p {
+                    font-size: 1rem;
+                    margin-top: 0.5rem;
+                }
+            }
+
+            p {
+                font-size: 1.2rem;
+                color: #4D5053;
+                line-height: 1.5;
+            }
+        }
+    }
+}

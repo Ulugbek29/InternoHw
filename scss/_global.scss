@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    padding: 5rem 10%;
+}
+
+$Primary1:#CDA274;
+$Primary2:#292F36;
+$Primary3:#F4F0EC;
+
+@mixin btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    background: $Primary2;
+    color: #fff;
+    border-radius: 1rem;
+    i {
+        color: $Primary1;
+        margin-left: 1rem;
+    }
+}
+
+@mixin title {
+    text-align: center;
+    font-size: 3rem;
+    color: #292F36;
+    
+}

@@ -1,0 +1,29 @@
+@import "../global";
+.project__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .project__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+
+        .project__title {
+            color: $Primary2;
+        }
+
+        a {
+            color: $Primary2;
+            text-decoration: none;
+            i {
+                color: $Primary1;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+

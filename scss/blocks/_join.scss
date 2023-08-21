@@ -1,0 +1,33 @@
+@import "../global";
+
+.join__section {
+    .join__container {
+        width: 100%;
+        padding: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        background: $Primary2;
+        border-radius: 3rem;
+        color: #fff;
+
+        .title {
+            font-size: 3rem;
+        }
+
+        > p {
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            @include btn();
+            background: $Primary1;
+
+            i {
+                color: $Primary2;
+            }
+        }
+    }
+}
